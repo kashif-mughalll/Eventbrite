@@ -5,27 +5,24 @@
     outline: none;
 }
 
-h1{
-    font-size: 2.8rem;
-}
-
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: #E5E5E5;
+    background-color: var(--background);
 }
 
 .main{
     width: 80rem;
     height: 53rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0 0 gray,-0.2rem -0.2rem 1.5rem 0.5rem gray,0 2rem 2.5rem -0.8rem gray;
+    box-shadow: 0 0 0 0 var(--gray-shade-lighter),-0.2rem -0.2rem 1.5rem 0.5rem var(--gray-shade-lighter),0 2rem 2.5rem -0.8rem var(--gray-shade-lighter);
+    margin: 2rem;
 }
 
 #top{
     height: 9rem;
     padding: 3rem;
-    background-color: blue;
+    background-color: var(--primary);
     border-radius: 1rem 1rem 0 0;
     
 }
@@ -43,14 +40,27 @@ h1{
     position: relative;
     bottom: 10rem;
     height: 40rem;
-    border: 0.2rem solid lightgray;
+    border: 2px solid var(--gray-shade-lightest);
     border-radius: 1rem;
     background-color: white;
 }
 
 #left{
     border-radius: 1rem 0 0 1rem;
-    border-right: 0.2rem solid lightgray;
+    border-right: 2px solid var(--gray-shade-lightest);
+}
+
+#upper{
+    padding: 2rem;
+}
+
+
+#profile-pic{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-bottom: 2rem;
 }
 
 #right{
