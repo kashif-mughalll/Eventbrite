@@ -1,12 +1,24 @@
-*{
+* {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
+/* Base Theme */
 :root {
-  --blue: #1e90ff;
-  --white: #ffffff;
+  /* Theme */
+  --primary: #06b290;
+  --primary-light: #08d9af;
+  --primary-lighter: #3af8d2;
+  --blue: #007af5;
+  --blue-light: #1e90ff;
+  --background: #f6f5f7;
+  --gray-shade-lightest: #e0e0e0;
+  --gray-shade-lighter: #c9c9c9;
+  --gray-shade-light: #adadad;
+  --gray-shade-dark: #353535;
+  --gray-shade-darker: #2b2b2b;
+  --gray-shade-darkest: #1f1f1f;
 }
 
 html{
@@ -17,13 +29,13 @@ p {
   padding: 12px;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.flex1{
+.flex1 {
   display: flex;
   align-items: center;
   justify-content: center;

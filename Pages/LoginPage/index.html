@@ -11,6 +11,130 @@
 <body>
 
 
+ <!-- //////////////////////////////////////////////////////////////// -->
+
+ <section>
+  <div class="container">
+    <div class="user singinBx">
+      <div class="imgBx img1">
+        <h1>Hello, Friend!</h1>
+        <p>Enter your personal details and start journey with us</p>
+
+        <a href="#" onclick="toggleForm();">
+          <button class="signUpBtn">Sign Up</button>
+        </a>
+      </div>
+      <div class="formBx">
+        <form action="">
+          <h2>Sign in</h2>
+          <!-- <input type="text" placeholder="Username" id="signInUserName"> -->
+          <input
+            type="text"
+            name=""
+            id="signInUserEmail"
+            placeholder="enter user email"
+          />
+          <label id="emailLab" style="display: none"
+            >Enter a Valid Email</label
+          >
+          <input
+            type="password"
+            name=""
+            id="signInPass"
+            placeholder="Password"
+          />
+          <label id="passLab" style="display: none">Wrong Password</label>
+          <label id="signInSuccess" style="display: none"
+            >Sign In successfull</label
+          >
+          <br />
+          <input type="submit" name="" id="signInBtn" value="login" />
+          <div
+            id="signInSvg"
+            style="display: none; position: relative; top: 10px; left: 5px"
+          >
+            <img
+              src="../../Assets/Eclipse-1s-200px.svg"
+              style="width: 35px"
+              alt=""
+            />
+          </div>
+          <p class="signup">
+            Don't have an account ?
+            <a href="#" onclick="toggleForm();">Sign Up.</a>
+          </p>
+          <h1 class="or">OR</h1>
+          <button id="loginGoogle">
+            <h4>Login With</h4>
+            <img
+              class="google-icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+            />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="user signupBx">
+      <div class="formBx">
+        <form action="">
+          <h2>Create An Account</h2>
+          <input type="text" placeholder="Username" id="userName" />
+          <input type="email" placeholder="Email Address" id="userEmail" />
+          <label id="emailLab1" style="display: none"
+            >Enter a Valid Email</label
+          >
+          <input
+            type="password"
+            name=""
+            id="userPass"
+            placeholder="enter password"
+          />
+          <label id="passLab1" style="display: none"
+            >Enter a Valid Password</label
+          >
+          <br />
+          <input type="submit" name="" value="Sign up" id="signUp" />
+          <div
+            id="signUpSvg"
+            style="display: none; position: relative; top: 10px; left: 5px"
+          >
+            <img
+              src="../../Assets/Eclipse-1s-200px.svg"
+              style="width: 35px"
+              alt=""
+            />
+          </div>
+          <br />
+          <label id="signUpSuccess" style="display: none"
+            >Sign Up successfull</label
+          >
+          <p class="signup" id="signUp">
+            Already have an account ?
+            <a href="#" onclick="toggleForm();">Sign In.</a>
+          </p>
+        </form>
+      </div>
+      <div class="imgBx img2">
+        <h1>Welcome Back!</h1>
+        <p>
+          To keep connected with us please login with your personal info
+        </p>
+        <a href="#" onclick="toggleForm();">
+          <button class="signUpBtn">Sign In</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  function toggleForm() {
+    var container = document.querySelector(".container");
+    container.classList.toggle("active");
+  }
+</script>
+
 
 
   <script src="../../Firebase/index.js"></script>
