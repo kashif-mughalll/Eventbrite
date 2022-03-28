@@ -28,12 +28,9 @@ section .container{
         0 10px 10px rgba(0,0,0,0.22);
 }
 
-.img1{
-  background: #FFC107;
-}
 
-.img2{
-  background: #FFC107;
+.img2, .img1{
+  background: var(--primary);
 }
 
 section .container .user{
@@ -133,8 +130,8 @@ section .container .user .formBx form input{
   font-weight: 300;
 }
 
-section .container .user .formBx form input[type="submit"]{
-  max-width: 100px;
+section .container .user .formBx form input[type="submit"]
+{
   background: #212529;
   color: #fff;
   cursor: pointer;
