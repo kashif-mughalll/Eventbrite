@@ -9,6 +9,10 @@
   --white: #ffffff;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 p {
   padding: 12px;
 }
