@@ -25,10 +25,6 @@ html{
   font-size: 62.5%;
 }
 
-p {
-  padding: 12px;
-}
-
 .flex {
   display: flex;
   align-items: center;
@@ -41,3 +37,4 @@ p {
   justify-content: center;
   flex-flow: column;
 }
+

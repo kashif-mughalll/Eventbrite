@@ -5,6 +5,14 @@
     outline: none;
 }
 
+.size{
+    font-size: 1.4rem;
+}
+
+.pad{
+    padding-top: 5px;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -54,6 +62,9 @@
     padding: 2rem;
 }
 
+#lower{
+    padding: 2rem;
+}
 
 #profile-pic{
     width: 10rem;
@@ -65,4 +76,66 @@
 
 #right{
     border-radius: 0 1rem 1rem 0;
+}
+
+#row1{
+    padding: 2rem;
+}
+
+#about{
+    height: 6rem;
+    margin-top: 5px;
+    padding: 5px;
+    border: 2px solid var(--gray-shade-lightest);
+    overflow-y: scroll;
+    border-radius: 3px;
+}
+
+#row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#col1{
+    padding: 2rem 1rem 2rem 2rem;
+}
+
+#domain{
+    height: 17rem;
+    margin-top: 5px;
+    border: 2px solid var(--gray-shade-lightest);
+    overflow-y: scroll;
+    border-radius: 3px
+}
+
+#domain-list{
+    padding: 5px;
+    border-bottom: 2px solid var(--gray-shade-lightest);
+
+}
+
+#col2{
+    padding: 2rem 2rem 2rem 1rem;
+}
+
+#projects{
+    margin-top: 5px;
+    height: 17rem;
+    border: 2px solid var(--gray-shade-lightest);
+    overflow-y: scroll;
+    border-radius: 3px
+}
+
+#project-list{
+    padding: 5px;
+    border-bottom: 2px solid var(--gray-shade-lightest);
+}
+
+@media only screen and (max-width: 525px){
+
+    #content{
+        display: block;
+        overflow-y: scroll;
+    }
+
 }
