@@ -26,12 +26,9 @@ section .container {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.img1 {
-  background: #06b290;
-}
 
-.img2 {
-  background: #08d9af;
+.img2, .img1{
+  background: var(--primary);
 }
 
 section .container .user {
@@ -130,7 +127,8 @@ section .container .user .formBx form input {
   font-weight: 300;
 }
 
-section .container .user .formBx form input[type="submit"] {
+section .container .user .formBx form input[type="submit"]
+{
   background: #212529;
   color: #fff;
   cursor: pointer;
