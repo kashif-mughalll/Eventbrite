@@ -77,6 +77,7 @@ connectFirebase(true, true, false, () => {
     } catch (error) {
       if (error.code === "auth/invalid-email") {
         //  alert("Invalid Email Address");
+        document.getElementById("signUpSvg").style.display = "none";
         document.getElementById("emailLab1").style.display = "inline";
         setTimeout(() => {
           document.getElementById("emailLab1").style.display = "none";
@@ -84,6 +85,7 @@ connectFirebase(true, true, false, () => {
       }
       if (error.code === "auth/weak-password") {
         //  alert("Weak Password");
+        document.getElementById("signUpSvg").style.display = "none";
         document.getElementById("passLab1").style.display = "inline";
         setTimeout(() => {
           document.getElementById("passLab1").style.display = "none";
@@ -107,6 +109,7 @@ connectFirebase(true, true, false, () => {
       }, 2000)
     } catch (error) {
       if (error.code == "auth/invalid-email") {
+        document.getElementById("signInSvg").style.display = "none";
         document.getElementById("emailLab").style.display = "inline";
         setTimeout(() => {
           document.getElementById("emailLab").style.display = "none";
@@ -114,6 +117,7 @@ connectFirebase(true, true, false, () => {
       }
       if (error.code === "auth/wrong-password") {
         //  alert("invalid password");
+        document.getElementById("signUpSvg").style.display = "none";
         document.getElementById("passLab").style.display = "inline";
         setTimeout(() => {
           document.getElementById("passLab").style.display = "none";
