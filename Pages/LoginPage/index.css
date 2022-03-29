@@ -1,9 +1,8 @@
-
 /* p{
   background-color: var(--blue);
 } */
 
-section{
+section {
   position: relative;
   min-height: 100vh;
   background: #f6f5f7;
@@ -13,7 +12,7 @@ section{
   padding: 20px;
 }
 
-section .container{
+section .container {
   position: relative;
   width: 800px;
   height: 500px;
@@ -24,19 +23,18 @@ section .container{
   overflow: hidden;
 
   border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-        0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.img1{
-  background: #FFC107;
+.img1 {
+  background: #06b290;
 }
 
-.img2{
-  background: #FFC107;
+.img2 {
+  background: #08d9af;
 }
 
-section .container .user{
+section .container .user {
   position: absolute;
   top: 0;
   left: 0;
@@ -55,10 +53,9 @@ section .container .user .imgBx {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  
 }
 
-section .container .user .imgBx h1{
+section .container .user .imgBx h1 {
   position: absolute;
   left: 0;
   top: 150px;
@@ -70,11 +67,11 @@ section .container .user .imgBx h1{
   text-align: center;
   color: #212529;
   font-weight: bold;
-margin: 0;
+  margin: 0;
   font-size: 35px;
 }
 
-section .container .user .imgBx p{
+section .container .user .imgBx p {
   font-size: 17px;
   line-height: 1.5;
   position: absolute;
@@ -86,7 +83,7 @@ section .container .user .imgBx p{
   color: #212529;
 }
 
-section .container .user .imgBx img{
+section .container .user .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -95,7 +92,7 @@ section .container .user .imgBx img{
   object-fit: cover;
 }
 
-section .container .user .formBx{
+section .container .user .formBx {
   position: relative;
   width: 50%;
   height: 100%;
@@ -118,7 +115,7 @@ section .container .user .formBx form h2 {
   color: #555;
 }
 
-section .container .user .formBx form input{
+section .container .user .formBx form input {
   position: relative;
   width: 100%;
   padding: 10px;
@@ -133,8 +130,7 @@ section .container .user .formBx form input{
   font-weight: 300;
 }
 
-section .container .user .formBx form input[type="submit"]{
-  max-width: 100px;
+section .container .user .formBx form input[type="submit"] {
   background: #212529;
   color: #fff;
   cursor: pointer;
@@ -144,7 +140,7 @@ section .container .user .formBx form input[type="submit"]{
   transition: 0.5s;
 }
 
-section .container .user .formBx form .signup{
+section .container .user .formBx form .signup {
   position: relative;
   margin-top: 20px;
   font-size: 12px;
@@ -154,64 +150,63 @@ section .container .user .formBx form .signup{
   font-weight: 300;
 }
 
-section .container .user .formBx form .signup a{
+section .container .user .formBx form .signup a {
   font-weight: 600;
   text-decoration: none;
   color: #212529;
 }
 
-section .container .signupBx{
+section .container .signupBx {
   pointer-events: none;
 }
 
-section .container.active .signupBx{
+section .container.active .signupBx {
   pointer-events: initial;
 }
 
-section .container .signupBx .formBx{
+section .container .signupBx .formBx {
   left: 100%;
 }
 
-section .container.active .signupBx .formBx{
+section .container.active .signupBx .formBx {
   left: 0;
 }
 
-section .container .signupBx .imgBx{
+section .container .signupBx .imgBx {
   left: -100%;
 }
 
-section .container.active .signupBx .imgBx{
+section .container.active .signupBx .imgBx {
   left: 0;
 }
 
-
-.signUpBtn{
+.signUpBtn {
   position: absolute;
   top: 300px;
   left: 30%;
   border-radius: 20px;
-border: 1px solid #212529;
-background-color: transparent;
-border-color: #212529;
-color: #212529;
-font-size: 12px;
-font-weight: bold;
-padding: 12px 45px;
-letter-spacing: 1px;
-text-transform: uppercase;
-transition: transform 80ms ease-in;
+  border: 1px solid #212529;
+  background-color: transparent;
+  border-color: #212529;
+  color: #212529;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
 }
-.signUpBtn:hover{
+.signUpBtn:hover {
   cursor: pointer;
   background-color: #212529;
   color: #fff;
 }
-.signUpBtn a{
+.signUpBtn a {
   color: white;
   text-decoration: none;
 }
 
-.or{
+.or {
   font-size: 20px;
   display: flex;
   justify-content: center;
@@ -220,68 +215,65 @@ transition: transform 80ms ease-in;
   color: #212529;
 }
 
-#loginGoogle{
-  width: 184px;
-height: 42px;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 2px;
-box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+#loginGoogle {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
   margin-top: 15px;
-  margin-left: 70px;
   font-size: 14px;
   letter-spacing: 0.2px;
   font-family: "Roboto";
 }
-#loginGoogle:hover{
+#loginGoogle:hover {
   cursor: pointer;
 }
 .google-icon {
- margin-left: 10px;
+  margin-left: 10px;
 }
 /* /////////////////////////////// */
 
-section .container .signinBx .formBx{
+section .container .signinBx .formBx {
   left: 0;
 }
 
-section .container.active .signinBx .formBx{
+section .container.active .signinBx .formBx {
   left: 100%;
 }
 
-section .container .signinBx .imgBx{
+section .container .signinBx .imgBx {
   left: 0;
 }
 
-section .container.active .signinBx .imgBx{
+section .container.active .signinBx .imgBx {
   left: -100%;
 }
 
 /* /////////////////////////////////////// */
 
-@media (max-width: 991px){
-  section .container{
-      max-width: 400px;
+@media (max-width: 991px) {
+  section .container {
+    max-width: 400px;
   }
 
-  section .container .imgBx{
-      display: none;
+  section .container .imgBx {
+    display: none;
   }
 
-  section .container .user .formBx{
-      width: 100%;
+  section .container .user .formBx {
+    width: 100%;
   }
 
-  #loginGoogle{
-      margin-top: 15px;
-      margin-left: 10px;
+  #loginGoogle {
+    margin-top: 15px;
+    margin-left: 10px;
   }
 }
 
-
-
-#signUpSuccess{
+#signUpSuccess {
   border: 1px solid black;
   background-color: green;
   color: white;
@@ -290,7 +282,7 @@ section .container.active .signinBx .imgBx{
   margin-top: 5px;
 }
 
-#signInSuccess{
+#signInSuccess {
   border: 1px solid black;
   background-color: green;
   color: white;
@@ -299,7 +291,7 @@ section .container.active .signinBx .imgBx{
   margin-top: 5px;
 }
 
-#emailLab1{
+#emailLab1 {
   border: 1px solid black;
   background-color: red;
   color: white;
@@ -307,7 +299,7 @@ section .container.active .signinBx .imgBx{
   padding: 5px;
 }
 
-#emailLab{
+#emailLab {
   border: 1px solid black;
   background-color: red;
   color: white;
@@ -315,7 +307,7 @@ section .container.active .signinBx .imgBx{
   padding: 5px;
 }
 
-#passLab1{
+#passLab1 {
   border: 1px solid black;
   background-color: red;
   color: white;
@@ -323,8 +315,7 @@ section .container.active .signinBx .imgBx{
   padding: 5px;
 }
 
-
-#passLab{
+#passLab {
   border: 1px solid black;
   background-color: red;
   color: white;
