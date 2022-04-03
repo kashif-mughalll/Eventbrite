@@ -4,51 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <title>Profle Page</title>
     <link rel="stylesheet" href="../../common.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="container flex">
+    <div class="container">
         <div class="main">
             <div id="top">
-                <h1>My Profile</h1>
+                <div id="heading"><h1>My Profile</h1></div>
             </div>
-            <div id="bottom">
+            <div id="bottom" class="flex">
                 <div id="content">
-                    <div id="left">
-                        <div id="upper" class="flex1">
+                    <div id="upper">
+                        <div id="wrapper1">
                             <div id="profile-pic"></div>
-                            <div id="name"><h3>DILAWAR ALI SHARIQ</h3></div>
-                            <div id="email"><p class="pad">dilawarshariq@gmail.com</p></div>
-                        </div>
-                        <div id="lower">
-                            <label class="size">Date of Birth:</label>
-                            <div id="dob"><p class="pad">17-01-2000</p></div>
-                            <br>
-                            <label class="size">Phone Number:</label>
-                            <div id="phone"><p class="pad">0330 28846550</p></div>
-                            <br>
-                            <label class="size">City:</label>
-                            <div id="city"><p class="pad">Karachi</p></div>
-                        </div>
-                    </div>
-                    <div id="right">
-                        <div id="row1">
-                            <label class="size">About:</label>
-                            <div id="about"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum ullam maxime voluptatem ducimus. Eveniet nulla fugit repellat repellendus dolore ipsum? Sint facere neque tenetur ipsa quia? Temporibus, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit eius eaque sint unde a qui itaque est consectetur porro quidem accusamus, aspernatur laborum mollitia in. Rerum laudantium pariatur a.</p></div>
-                        </div>
-                        <div id="row2">
-                            <div id="col1">
-                                <label class="size">Domain:</label>
-                                <div id="domain">
-                                    <div id="domain-list"><p>html</p></div>
-                                </div>
+                            <div id="wrapper" class="flex1">
+                                <div id="name"><h4>DILAWAR ALI SHARIQ</h4></div>
+                                <div id="email"><p class="pad">dilawarshariq@gmail.com</p></div>
                             </div>
-                            <div id="col2">
+                        </div>
+                        <button id="edit-btn">
+                            <p class="pad1">Edit Profile</p>
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                    </div>
+                    <div id="lower">
+                        <div id="left">
+                            <div id="row1">
+                                <label class="size">Date of Birth:</label>
+                                <div id="dob"><p class="pad">17-01-2000</p></div>
+                                <br>
+                                <label class="size">Phone Number:</label>
+                                <div id="phone"><p class="pad">0330 28846550</p></div>
+                                <br>
+                                <label class="size">City:</label>
+                                <div id="city"><p class="pad">Karachi</p></div>
+                            </div>
+                            <div id="row2">
                                 <label class="size">My Projects:</label>
                                 <div id="projects">
                                     <div id="project-list"><p>dummy website creation</p></div>
+                                    <div id="project-list"><p>dummy website creation</p></div>
+                                    <div id="project-list"><p>dummy website creation</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right">
+                            <div id="row3">
+                                <label class="size">About:</label>
+                                <div id="about"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error fugiat quae quam inventore optio saepe dicta odio harum. Alias, veritatis provident. Debitis aperiam quae saepe tempore! Dolore quia nisi velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et mollitia tempora esse nesciunt, provident ducimus earum deleniti aperiam, veritatis deserunt sed dolorem, sit expedita eius ad! Autem, neque nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio illo aperiam suscipit corporis ipsa quae ratione, consequuntur ea esse qui iste fuga, ipsum necessitatibus itaque, maiores quibusdam. Tempora, reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum ullam maxime voluptatem ducimus. Eveniet nulla fugit repellat repellendus dolore ipsum? Sint facere neque tenetur ipsa quia? Temporibus, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit eius eaque sint unde a qui itaque est consectetur porro quidem accusamus, aspernatur laborum mollitia in. Rerum laudantium pariatur a.</p></div>
+                            </div>
+                            <div id="row4">
+                                <label class="size">Domain:</label>
+                                <div id="domain">
+                                    <div id="domain-list"><p>html</p></div>
+                                    <div id="domain-list"><p>css</p></div>
+                                    <div id="domain-list"><p>javascript</p></div>
+                                    <div id="domain-list"><p>react</p></div>
                                 </div>
                             </div>
                         </div>
