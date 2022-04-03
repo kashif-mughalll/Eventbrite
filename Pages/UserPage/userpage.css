@@ -77,14 +77,91 @@
     background-color: #008F11;
     cursor: pointer;
 }
+.card-area{
+    display: grid;
 
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,350px));
+    padding: 1rem;
+    grid-gap: 40px;
+}
+.card{
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+    transform: scale(1.1);
+    
+}
+.imgBox{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.imgBox img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.imgBox::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.5;
+}
 
+.speaker-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #FFF;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:120px;
+    top: 100px;
+    overflow: hidden;
+}
+.speaker-img img{
+    width: 100%;
+}
 
+.card1>.imgBox::after{
+    background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+}
+.card2>.imgBox::after{
+    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+.card3>.imgBox::after{
+    background-image: linear-gradient(135deg, #ffab1d, #f8501c);
+}
 
-
-
-
-
+.details-section{
+    padding: 1rem;
+}
+.details-section h5{
+    padding-top: 3rem;
+    color: #333;
+    font-weight: bold;
+}
+.details-section .date{
+    color: #f2694f;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.details-section .location p{
+    font-size: 0.9rem;
+    color: #a0a2b0;
+}
 
 
 
