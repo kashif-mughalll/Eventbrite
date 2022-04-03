@@ -170,13 +170,13 @@
   }
   .heart{
     position: absolute;
-    background: url("./Images/img.png") no-repeat;
+    background: url("./Images/img.png") no-repeat, white;
     background-size: 2900%;
-    height: 70px;
-    width: 70px;
-    right: -8px;
-    top: 100px;
-
+    height: 50px;
+    width: 50px;
+    right: 0px;
+    top: 25px;
+    border-radius: 50% 0  0 50%;
   }
   .heart.heart-active{
     animation: animate .8s steps(28) 1;
