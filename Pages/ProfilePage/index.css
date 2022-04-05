@@ -1,5 +1,5 @@
 .size{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .pad{
@@ -7,128 +7,183 @@
 }
 
 .container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--background);
+    letter-spacing: 0.5px;
 }
 
 .main{
-    width: 80rem;
-    height: 53rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 0 0 var(--gray-shade-lighter),-0.2rem -0.2rem 1.5rem 0.5rem var(--gray-shade-lighter),0 2rem 2.5rem -0.8rem var(--gray-shade-lighter);
-    margin: 2rem;
+    width: 100%;
 }
 
 #top{
-    height: 9rem;
+    display: flex;
+    justify-content: center;
+    height: 18rem;
     padding: 3rem;
     background-color: var(--primary);
-    border-radius: 1rem 1rem 0 0;
-    
+}
+
+#heading{
+    margin-top: 1rem;
+    width: 100rem;
 }
 
 #bottom{
-    height: 32rem;
-    background-color: white;
-    padding: 3rem;
-    border-radius: 0 0 1rem 1rem;
+    padding: 3rem 3rem 0 3rem;
+    background-color: var(--background);
 }
 
 #content{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     position: relative;
-    bottom: 10rem;
-    height: 40rem;
-    border: 2px solid var(--gray-shade-lightest);
+    top: -10rem;
+    width: 100rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     border-radius: 1rem;
     background-color: white;
 }
 
-#left{
-    border-radius: 1rem 0 0 1rem;
-    border-right: 2px solid var(--gray-shade-lightest);
-}
-
 #upper{
+    display: flex;
     padding: 2rem;
+    border-bottom: 2px solid var(--gray-shade-lightest);
 }
 
-#lower{
-    padding: 2rem;
+#wrapper1{
+    display: flex;
 }
 
 #profile-pic{
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    background-color: black;
-    margin-bottom: 2rem;
 }
 
-#right{
-    border-radius: 0 1rem 1rem 0;
+#dp{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+#wrapper{
+    padding: 2rem;
+}
+
+#edit-btn{
+    height: 3.5rem;
+    margin-left: auto;
+    display: flex;
+    border-radius: 18px;
+    border: 2px solid var(--gray-shade-light);
+    background-color: white;
+    padding: 10px 15px;
+}
+
+#edit-btn:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    border: 2px solid black;
+    color: white;
+}
+
+#edit-btn:hover .pad1{
+    color: white;
+}
+
+.pad1{
+    padding-right: 10px;
+    letter-spacing: 0.5px;
+}
+
+#lower{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#left{
+    border-right: 2px solid var(--gray-shade-lightest);
 }
 
 #row1{
     padding: 2rem;
-}
-
-#about{
-    height: 6rem;
-    margin-top: 5px;
-    padding: 5px;
-    border: 2px solid var(--gray-shade-lightest);
-    overflow-y: scroll;
-    border-radius: 3px;
+    border-bottom: 2px solid var(--gray-shade-lightest);
 }
 
 #row2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#col1{
-    padding: 2rem 1rem 2rem 2rem;
-}
-
-#domain{
-    height: 17rem;
-    margin-top: 5px;
-    border: 2px solid var(--gray-shade-lightest);
-    overflow-y: scroll;
-    border-radius: 3px
-}
-
-#domain-list{
-    padding: 5px;
-    border-bottom: 2px solid var(--gray-shade-lightest);
-
-}
-
-#col2{
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 2rem;
 }
 
 #projects{
     margin-top: 5px;
-    height: 17rem;
-    border: 2px solid var(--gray-shade-lightest);
-    overflow-y: scroll;
-    border-radius: 3px
 }
 
 #project-list{
-    padding: 5px;
+    padding: 5px 0;
+}
+
+#row3{
+    padding: 2rem;
     border-bottom: 2px solid var(--gray-shade-lightest);
 }
 
-@media only screen and (max-width: 525px){
+#about{
+    margin-top: 10px;
+}
 
-    #content{
+#row4{
+    padding: 2rem;
+}
+
+#domain{
+    display: flex;
+    margin-top: 5px;
+}
+
+#domain-list{
+    padding: 5px 10px;
+    border: 1px solid var(--gray-shade-light);
+    border-radius: 5px;
+    margin: 5px 10px 5px 0;
+}
+
+@media only screen and (max-width: 625px){
+
+    #lower{
         display: block;
-        overflow-y: scroll;
     }
 
+    #left{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-right: 0;
+    }
+
+    #row2{
+        border-bottom: 2px solid var(--gray-shade-lightest);
+        border-left: 2px solid var(--gray-shade-lightest);
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    #wrapper1{
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    #upper{
+        display: block;
+    }
+
+    #left{
+        display: block;
+    }
+
+    #row2{
+        border-left: 0;
+    }
 }
