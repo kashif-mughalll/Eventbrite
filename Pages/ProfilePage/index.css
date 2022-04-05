@@ -15,7 +15,6 @@
 
 .main{
     width: 100%;
-    border-radius: 1rem;
 }
 
 #top{
@@ -59,7 +58,12 @@
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    background-color: black;
+}
+
+#dp{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
 }
 
 #wrapper{
