@@ -7,10 +7,18 @@
   <title>Document</title>
 </head>
 <body>
-
-  
-  <a href="./Pages/LoginPage/index.html">login</a>
-  <h1>aksdkakdka</h1>
-
+  <script>
+    try {
+      const auth = JSON.parse(localStorage.getItem('auth'));
+      if(auth) {
+        const profile = JSON.parse(localStorage.getItem('profile'));
+        if (profile) {
+          location.assign('./Pages/UserPage/userpage.html');
+        } else location.assign('./Pages/ProfileForm/index.html');
+      } else location.assign('./Pages/LoginPage/index.html');
+    } catch (err) {
+      location.assign('./Pages/LoginPage/index.html');
+    }
+  </script>
 </body>
 </html>
