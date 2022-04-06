@@ -69,6 +69,16 @@ connectFirebase(true, true, false, () => {
       document.getElementById("signUpSvg").style.display = "inline";
       var data = await auth.createUserWithEmailAndPassword(email, pass);
 
+      data = data.user;
+      signUpData = signUpDataObj;
+      var signUpDataObj = {
+        eamil : data.email ,
+        uid : data.uid
+      };
+      localStorage.setItem("auth",JSON.stringify(signUpDataObj));
+
+      // console.log(data);
+
       document.getElementById("signUpSuccess").style.display = "inline";
       document.getElementById("signUpSvg").style.display = "none";
       setTimeout(() => {
@@ -100,6 +110,16 @@ connectFirebase(true, true, false, () => {
     try {
       document.getElementById("signInSvg").style.display = "inline";
       var signInData = await auth.signInWithEmailAndPassword(email, pass);
+
+      signInData = signInData.user;
+      signInAuth = signInDataObj;
+      var signInDataObj = {
+        email : signInData.email,
+        uid : signInData.uid
+      };
+      localStorage.setItem("auth",JSON.stringify(signInDataObj));
+      
+      // console.log(signInDataObj);
 
       // alert("Logged in")
       document.getElementById("signInSuccess").style.display = "inline";

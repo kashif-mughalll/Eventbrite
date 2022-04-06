@@ -11,157 +11,184 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../../common.css">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    
     <div class="jumbotron text-center">
       <h1>Admin Pannel</h1>
-    </div>
-    <div class="container">
+  </div>
+  <div class="container">
       <h3>Basic Info:</h3>
-      <div class="row">
-        <form>
+     <div class="row">
+      <form class="needs-validation" novalidate>
           <div class="form-group">
-            <label for="inputTitle">Enter Title</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Be Clear And Descriptive"
-            />
+              <label for="validationCustom01">Enter Title</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Be Clear And Descriptive" required>
+              <div class="invalid-feedback">
+                  Please choose a title.
+                </div>
           </div>
 
           <div class="form-group pt-1">
-            <label for="inputTitle">Organizer</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Tell Attendee who is organizing the Event"
-            />
+              <label for="validationCustom02">Organizer</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Tell Attendee who is organizing the Event" required>
+              <div class="invalid-feedback">
+                  Please name an organizer.
+                </div>
           </div>
 
           <div class="from-group pt-1">
-            <label for="cat">Catagory:</label> <br />
-            <select name="" id="cat" class="from-control">
-              <option>Select an Option</option>
+          <label for="validationCustom03" class="mt-1">Catagory:</label>
+          <select class="form-select form-select-sm mt-1" id="validationCustom03" aria-label=".form-select-sm example" required>
+              <option selected disabled value="">Select An Option</option>
               <option>Business</option>
-              <option>Fashion</option>
-              <option>Food</option>
-              <option>Music</option>
-              <option>Concert</option>
-              <option>Technology</option>
+                  <option>Fashion</option>
+                  <option>Food</option>
+                  <option>Music</option>
+                  <option>Concert</option>
+                  <option>Technology</option>
             </select>
+            <div class="invalid-feedback">
+              Please select an option.
+            </div>
+          </div>
+            
+
+          <div class="form-group pt-1">
+              <label for="inputTags">Tags:</label> <br>
+              <input type="text" class="form-control mt-1" id="tags" placeholder="Add Search Keywords to your Event">
+              <button class="btn btn-primary" id="chipBtn">Add</button>
+              <div class="chipsCard form-control mt-1" id="chipsDiv">
+                  <!-- <h1 id="chipsEle" class="chip">chips</h1> -->
+                  <div class="chip">
+                      johny
+                      <span class="closeBtn" onclick="this.parentElement.style.display='none'">&times;</span>
+                  </div>
+              </div>
           </div>
 
           <div class="form-group pt-1">
-            <label for="inputTags">Tags:</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Add Search Keywords to your Event"
-            />
+              <label for="validationCustom04">Enter Name:</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="Enter Name" required>
+              <div class="invalid-feedback">
+                  Please Enter a name.
+                </div>
+          </div>
+          <div class="form-group pt-1">
+              <label for="validationCustom05">Enter Company Name:</label>
+              <input type="text" class="form-control" placeholder="Enter Company Name" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                  Please Enter a company name.
+                </div>
+          </div>
+          <div class="form-group pt-1">
+              <label for="validationCustom06">Enter Email Address:</label>
+              <input type="email" class="form-control" placeholder="Enter Email Address" id="validationCustom06" required>
+              <div class="invalid-feedback">
+                  Please Enter a Valid Email Address.
+                </div>
           </div>
 
           <div class="form-group pt-1">
-            <label for="inputName">Enter Name:</label>
-            <input type="text" class="form-control" placeholder="Enter Name" />
-          </div>
-          <div class="form-group pt-1">
-            <label for="inputCompany">Enter Company Name:</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Company Name"
-            />
-          </div>
-          <div class="form-group pt-1">
-            <label for="inputEmail">Enter Email Address:</label>
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Enter Email Address"
-            />
-          </div>
-          <div class="form-group pt-1">
-            <label for="inputPass">Enter Password:</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Password"
-            />
+              <label for="validationPass">Enter Password:</label>
+              <input type="text" class="form-control" placeholder="Enter Password" id="validationPass" required>
+              <div class="invalid-feedback">
+                  Please Enter a Valid Password.
+                </div>
           </div>
 
           <div class="form-group pt-1">
-            <label for="comment">Describe About Your Event:</label>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
-          </div>
+              <label for="desc">Describe About Your Event:</label>
+              <textarea class="form-control" rows="5" id="desc" required></textarea>
+              <div class="invalid-feedback">
+                  Please Write Something About Your Event.
+                </div>
+            </div>
+          
 
-          <div class="from-group pt-2">
-            <label for="select">Select City:</label>
-            <select name="" id="select" class="from-control">
-              <option>Select An Option</option>
+            <div class="from-group pt-2">
+          <label for="validationCustom07" class="mt-1">Select City:</label>
+          <select class="form-select form-select-sm" id="validationCustom07" aria-label=".form-select-sm example" required>
+              <option selected disabled value="">Select a City</option>
               <option>Karachi</option>
               <option>Lahore</option>
               <option>Islamabad</option>
             </select>
           </div>
+           
 
           <div class="form-group pt-1">
-            <label for="location"><h5>Location:</h5></label>
-            <div class="checkbox">
-              <label> <input type="checkbox" /> Venue </label>
-              <br />
-              <label> <input type="checkbox" /> Online Event </label>
-              <br />
-              <label> <input type="checkbox" /> To Be Announced </label>
-            </div>
-            <input
-              type="text"
-              class="form-control mt-1"
-              placeholder="Enter Location"
-            />
+              <label for="validationCustom08"><h5>Location:</h5></label>
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox">  Venue
+                  </label>
+                  <br>
+                  <label>
+                      <input type="checkbox">  Online Event
+                  </label>
+              </div>
+              <input type="text" class="form-control" id="validationCustom08" placeholder="Enter Location" required>
+              <div class="invalid-feedback">
+                  Please Enter Location.
+                </div>
           </div>
 
           <div class="form-group pt-1">
-            <label for="dateAndTime"><h5>Date & Time</h5></label>
-            <div class="checkbox">
-              <label> <input type="checkbox" /> Single Event </label>
-              <br />
-              <label> <input type="checkbox" /> Recurring Event </label>
-            </div>
-            <label for="td">Choose a Time and Date for Event:</label> <br />
-            <input type="datetime-local" class="mt-2" id="td" />
+              <label for="dateAndTime"><h5>Date & Time</h5></label>
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox">  Single Event
+                  </label>
+                  <br>
+                  <label>
+                      <input type="checkbox">  Recurring Event
+                  </label>
+              </div>
+              <label for="td">Choose a Time and Date for Event:</label> <br>
+              <input type="datetime-local" class="mt-2 form-control" id="dateAndTime" required>
+              <div class="invalid-feedback">
+                  Please Select Date and Time.
+                </div>
           </div>
 
           <div class="from-group pt-1">
-            <label for="loe"
-              >What's your level of experience hosting events?</label
-            >
-            <br />
-            <select name="" id="loe" class="from-control mt-1">
-              <option>Select an Option</option>
-              <option>Newbie-This is my first Event</option>
-              <option>Beginner</option>
-              <option>Intermediate</option>
-              <option>Expert</option>
-            </select>
+              <label for="loe">What's your level of experience hosting events?</label> <br>
+              <select name="" id="loe" class="form-select form-select-sm mt-1" required>
+                  <option selected disabled value="">Select an Option</option>
+                  <option>Newbie-This is my first Event</option>
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Expert</option>
+              </select>
+              <div class="invalid-feedback">
+                  Please Select an option.
+                </div>
           </div>
 
           <div class="from-group pt-1">
-            <label for="hear">How did you first hear about Eventbrite?</label>
-            <br />
-            <select name="" id="hear" class="from-control mt-1">
-              <option>Select an Option</option>
-              <option>Friends</option>
-              <option>Social Media</option>
-              <option>online Search</option>
-              <option>ads</option>
-            </select>
+              <label for="hear">How did you first hear about Eventbrite?</label> <br>
+              <select name="" id="hear" class="form-select form-select-sm mt-1" required>
+                  <option selected disabled value="">Select an Option</option>
+                  <option>Friends</option>
+                  <option>Social Media</option>
+                  <option>online Search</option>
+                  <option>ads</option>
+              </select>
+              <div class="invalid-feedback">
+                  Please Select an option.
+                </div>
           </div>
-        </form>
 
-        <button class="btn btn-primary mt-3 mb-3 btn-block">Submit</button>
-      </div>
-    </div>
+
+          <button class="btn btn-primary mt-3 mb-3 btn-block" type="submit">Submit</button>
+
+            </form>
+            
+     </div>
+  </div>
 
     <script src="../../Firebase/index.js"></script>
     <script src="../../templates.js"></script>
