@@ -54,10 +54,12 @@ connectFirebase(true, true, false, () => {
         uid: userData.uid,
       };
       localStorage.setItem("auth", JSON.stringify(userDataObj));
+      redirect();
 
       return userDataObj;
       ////abb kisi bhi function kko login wala data miljaega
     } catch (error) {
+      console.log(error)
       alert("something Went wrong!");
     }
   };
@@ -76,6 +78,7 @@ connectFirebase(true, true, false, () => {
         uid : data.uid
       };
       localStorage.setItem("auth",JSON.stringify(signUpDataObj));
+      redirect();
 
       // console.log(data);
 
@@ -118,6 +121,7 @@ connectFirebase(true, true, false, () => {
         uid : signInData.uid
       };
       localStorage.setItem("auth",JSON.stringify(signInDataObj));
+      redirect();
       
       // console.log(signInDataObj);
 
@@ -146,3 +150,11 @@ connectFirebase(true, true, false, () => {
     }
   };
 })
+
+
+function redirect(){
+  const profile = localStorage.getItem('profile');
+  if (profile) {
+    location.assign('../UserPage/userpage.html');
+  } else location.assign('../ProfileForm/index.html');
+}
