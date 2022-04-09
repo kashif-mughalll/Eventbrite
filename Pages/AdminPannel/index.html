@@ -20,8 +20,9 @@
       <h1>Admin Pannel</h1>
   </div>
   <div class="container">
-      <h3>Basic Info:</h3>
+      
      <div class="row">
+      <h3>Basic Info:</h3>
       <form class="needs-validation" novalidate>
           <div class="form-group">
               <label for="validationCustom01">Enter Title</label>
@@ -42,13 +43,13 @@
           <div class="from-group pt-1">
           <label for="validationCustom03" class="mt-1">Catagory:</label>
           <select class="form-select form-select-sm mt-1" id="validationCustom03" aria-label=".form-select-sm example" required>
-              <option selected disabled value="">Select An Option</option>
-              <option>Business</option>
-                  <option>Fashion</option>
-                  <option>Food</option>
-                  <option>Music</option>
-                  <option>Concert</option>
-                  <option>Technology</option>
+              <option value="0" selected>Select An Option</option>
+                  <option value="1">Fashion</option>
+                  <option value="2">Food</option>
+                  <option value="3">Music</option>
+                  <option value="4">Concert</option>
+                  <option value="5">Technology</option>
+                  <option value="6">Business</option>
             </select>
             <div class="invalid-feedback">
               Please select an option.
@@ -183,7 +184,7 @@
           </div>
 
 
-          <button class="btn btn-primary mt-3 mb-3 btn-block" type="submit">Submit</button>
+          <button class="btn btn-primary mt-3 mb-3 btn-block" id="submitAll" type="submit">Submit</button>
 
             </form>
             
