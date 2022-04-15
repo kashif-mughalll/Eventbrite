@@ -1,3 +1,26 @@
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+
+
 var tags = document.getElementById('tags');
 var chipBtn = document.getElementById('chipBtn');
 var chipsEle = document.getElementById('chipsEle');
@@ -20,24 +43,43 @@ chipBtn.addEventListener('click' , (e) => {
     chipsDiv.appendChild(tag);
 });
 
+// admin pannel data extract
+var title = document.getElementById('validationCustom01');  
+var organizer = document.getElementById('validationCustom02');
+var catagory = document.getElementById('validationCustom03');
+var text = catagory.options[catagory.selectedIndex].text;
+var Name = document.getElementById('validationCustom04');
+var companyName = document.getElementById('validationCustom05');
+var email = document.getElementById('validationCustom06');
+var password = document.getElementById('validationPass');
+var desc = document.getElementById('desc').innerHTML;
+var city = document.getElementById('validationCustom07');
+var selectCity = city.options[city.selectedIndex].text;
+var dateAndTime = document.getElementById('dateAndTime');
+var loe = document.getElementById('loe');
+var selectLoe = loe.options[loe.selectedIndex].text;
+var hear = document.getElementById('hear');
+var selectHear = hear.options[hear.selectedIndex].text;
+var submitAll = document.getElementById('submitAll');
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
+
+var apData = {
+  titleData : title.value,
+  organizerData : organizer.value,
+  catagoryData : text,
+  nameData : Name.value,
+  companyNameData : companyName.value,
+  emailData : email.value,
+  passwordData : password.value,
+  descData : desc,
+  cityData : selectCity,
+  dateAndTimeData : dateAndTime.value,
+  loeData : selectLoe,
+  hearData : selectHear
+};
+
+submitAll.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log(apData.titleData);
+})
+
