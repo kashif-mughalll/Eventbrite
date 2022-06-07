@@ -74,7 +74,8 @@ connectFirebase(true, true, false, () => {
       data = data.user;
       signUpData = signUpDataObj;
       var signUpDataObj = {
-        eamil : data.email ,
+        name,
+        email : data.email ,
         uid : data.uid
       };
       localStorage.setItem("auth",JSON.stringify(signUpDataObj));

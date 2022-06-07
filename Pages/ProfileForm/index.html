@@ -22,38 +22,56 @@
             </div>
             <div id="bottom" class="flex">
                 <div id="content">
-                    <form>
+                    <form class="needs-validation" novalidate>
                         <div class="form-group pt-1 common">
-                            <label for="inputName" class="size">Name:</label>
-                            <input type="text" class="form-control" placeholder="Enter Name" />
+                            <label for="validationCustom01" class="size">Name:</label>
+                            <input type="text" class="form-control" id="validationCustom01"  placeholder="Enter Name" required>
+                            <div class="invalid-feedback">
+                                Please choose a title.
+                            </div>
                         </div>
                         <div class="form-group pt-1 common">
-                            <label for="inputEmail" class="size">Email Address:</label>
-                            <input type="email" class="form-control" placeholder="Enter Email Address" />
+                            <label for="validationCustom02" class="size">Email Address:</label>
+                            <input type="email" class="form-control" id="validationCustom02" placeholder="Enter Email Address" required>
+                            <div class="invalid-feedback">
+                                Please choose a title.
+                            </div>
                         </div>
                         <div class="form-group pt-1 common">
-                            <label for="inputPass" class="size">Password:</label>
-                            <input type="text" class="form-control" placeholder="Enter Password" />
+                            <label for="validationCustom03" class="size">Password:</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="Enter Password" required>
+                            <div class="invalid-feedback">
+                                Please choose a title.
+                            </div>
                         </div>
                         <div class="form-group pt-1 common">
                             <label for="comment" class="size">About:</label>
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                            <textarea class="form-control" rows="5" id="comment" required></textarea>
+                            <div class="invalid-feedback">
+                                Please choose a title.
+                            </div>
                         </div>
                         <div class="form-group pt-1 common">
                             <label for="date of birth" class="size">Date of Birth:</label>
                             <div>
-                                <input type="datetime-local" class="mt-1 border" id="td" />
+                                <input type="datetime-local" class="mt-2 form-control" id="td" required>
+                                <div class="invalid-feedback">
+                                    Please choose a title.
+                                </div>
                             </div>
                         </div>
                         <div class="form-group pt-1 common">
                             <label for="inputNum" class="size">Phone Number:</label>
-                            <input type="number" class="form-control" placeholder="Enter Phone Number" />
+                            <input type="number" class="form-control" placeholder="Enter Phone Number" required>
+                            <div class="invalid-feedback">
+                                Please choose a title.
+                            </div>
                         </div>
                         <div class="from-group pt-2 common">
-                            <label for="select" class="size">City:</label>
+                            <label for="select" class="size mt-1">City:</label>
                             <div>
-                                <select name="" id="select" class="from-control border">
-                                    <option>Select An Option</option>
+                                <select class="form-select form-select-sm" id="validationCustom07" aria-label=".form-select-sm example" required>
+                                    <option selected disabled value="">Select An Option</option>
                                     <option>Karachi</option>
                                     <option>Lahore</option>
                                     <option>Islamabad</option>
@@ -69,15 +87,21 @@
                                 <br />
                                 <label> <input type="checkbox" /> javascript </label>
                             </div>
-                            <input type="text" class="form-control mt-1" placeholder="Select domain" />
+                            <input type="text" class="form-control mt-1" placeholder="Select domain" required>
+                            <div class="invalid-feedback">
+                                Please choose a title.
+                            </div>
                         </div>
                         <div class="form-group pt-1 common">
                             <label for="inputProject" class="size">Project:</label>
-                            <input type="text" class="form-control" placeholder="Enter Projects" />
+                            <input type="text" class="form-control" placeholder="Enter Projects" required>
+                            <div class="invalid-feedback">
+                                Please choose a title.
+                            </div>
                         </div>
+                        <button class="btn btn-primary mt-3 mb-3 btn-block" type="submit">Submit</button>
                     </form>
               
-                    <button class="btn btn-primary mt-3 mb-3 btn-block">Submit</button>
                 </div>
             </div>
         </div>
