@@ -1,10 +1,16 @@
 connectFirebase(true, true, false, () => {
     var auth = firebase.auth()
-    console.log(auth)
-    var { email} = JSON.parse(localStorage.getItem('auth') || "");
-    console.log(email)
-    document.getElementById('validationCustom02').value = email ? email : "";
-  });
+    var db = firebase.firestore();
+    var CreateProfileInDB = async (data) => {
+      try {
+        await db.collection("Profiles").doc(data.id).set(data);
+        console.log("Document succesfully created");
+      } catch (error) {
+        console.error(error)
+      }
+    }
+    
+});
 
 
 
